@@ -1,0 +1,57 @@
+{ 
+   "backendSkills":[
+    {"skill": "C#"},
+    {"skill": "SQL Server"},
+    {"skill": "API"},
+    {"skill": "ASP.NET"},
+    {"skill": "ADO.NET"},
+    {"skill":"GIT"},
+    {"skill": "Visual Studio"}
+    ],
+
+    "frontendSkills":[
+    {"skill": "HTML5"},
+    {"skill": "CSS"},
+    {"skill": "JavaScript"},
+    {"skill": "React"},
+    {"skill": "Bootstrap"},
+    {"skill": "Figma"},
+    {"skill": "Visual Studio Code"}
+    ],
+
+  "education": [
+    {
+      "imageUrl": "https://www.datocms-assets.com/91872/1675258709-footer_logo.svg",
+      "institution": "Chas Academy",
+      "major": "Fullstack Developer .NET",
+      "date": "09/2023-06/2025"
+    },
+    {
+      "imageUrl": "https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/431203306_991673152716442_2338342778407279358_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=NmIeZCyRNbYAX-IxKE0&_nc_ht=scontent-arn2-1.xx&oh=00_AfDSiUeZI0j52banox4iOz-Pko8HaNnP9oOvEz97XltrHQ&oe=6608B4CD",
+      "institution": "Royal Institute Of Technology",
+      "major": "Civil Engineering Energy",
+      "date": "09/2020-12/2022"
+    },
+    {
+      "imageUrl":"https://www.univariety.com/uploads/university/images/logo/e37f84f2_logo.jpg",
+      "institution": "London Southbank University",
+      "major": "Psychology",
+      "date": "01/2017-06/2017"
+    }
+  ],
+
+  "experience": [
+    {
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7b25Lad8NT_jSLquXhpZOLxh8GflYqZz1FaeR_INCBw&s",
+      "company": "Circle K",
+      "role": "Sales staff",
+      "date": "06/2023-"
+    },
+    {
+      "imageUrl": "https://www.ok.se/sites/default/files/styles/1440x0/public/inline-images/IC%20blir%20OK%20-%20DA2011-473313-OK000192_0.jpg?itok=qHFWt4YU",
+      "company": "OKQ8",
+      "role": "Sales staff",
+      "date": "09/2019-08/2021"
+    }
+  ]
+}
