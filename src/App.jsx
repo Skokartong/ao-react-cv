@@ -10,10 +10,10 @@ import Header from "./Components/Header/Header.jsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ao-react-cv">
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route
           path="/experience"
