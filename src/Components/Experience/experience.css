@@ -1,137 +1,149 @@
-.experience-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-    height: 90vh;
-    width: 100vw;
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 90vh;
+  width: 100vw;
 }
 
-.skills-title{
-    display: grid;
-    padding: 2vh;
-    grid-row:1;
-    grid-column: 1/3;
-    align-items: center;
-    justify-items: center;
+.skills-title {
+  display: grid;
+  padding: 2vh;
+  grid-row: 1;
+  grid-column: 1/3;
+  align-items: center;
+  justify-items: center;
 }
 
-.skills-title h2{
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 200;
-    font-size: 6vh;
+.skills-title h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  font-size: 6vh;
 }
 
-.skills-title h2 span{
-    color: rgb(188, 65, 237);
-    font-weight: 500;
+.skills-title h2 span {
+  color: rgb(188, 65, 237);
+  font-weight: 500;
 }
 
-.skills{
-    display: grid;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-    grid-row: 2;
-    grid-column: 1/3;
-    grid-auto-flow: column;
-    align-items: center;
-    justify-content: center; 
+.skills {
+  display: grid;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0)
+  );
+  grid-row: 2;
+  grid-column: 1/3;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.backend{
-    width: 20em;
-    padding: 1.5vw;
+.backend {
+  width: 20em;
+  padding: 1.5vw;
 }
 
-.frontend{
-    width: 20em;
-    padding:1.5vw;
-} 
-
-.backend h3, .frontend h3{
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 300;
+.frontend {
+  width: 20em;
+  padding: 1.5vw;
 }
 
-.backend ul, .frontend ul{
-    font-family: "IBM Plex Mono", sans-serif;
-    font-size:2.5vh;
-    margin: 3vh;
+.backend h3,
+.frontend h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
 }
 
-.experience{
-    display: grid;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-    align-items: center;
-    justify-content: center;
-    margin-top: 2em;
-    padding: 1em;
-    grid-row:3;
-    grid-column: 1/3;
+.backend ul,
+.frontend ul {
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 2.5vh;
+  margin: 3vh;
 }
 
-.education{
-    margin-bottom: 2em;
+.experience {
+  display: grid;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  padding: 1em;
+  grid-row: 3;
+  grid-column: 1/3;
 }
 
-.experience ul{
-    font-family: "IBM Plex Mono", sans-serif;
-    list-style: none;
+.education {
+  margin-bottom: 2em;
 }
 
-.experience ul span{
-    color: rgb(188, 65, 237);
-    font-weight: 500;
+.experience ul {
+  font-family: "IBM Plex Mono", sans-serif;
+  list-style: none;
 }
 
-.experience h3{
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 300;
+.experience ul span {
+  color: rgb(188, 65, 237);
+  font-weight: 500;
+}
+
+.experience h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
 }
 
 .backend ul li,
 .frontend ul li {
-    list-style: none;
+  list-style: none;
 }
 
-ul li img{
-    width: 3em;
+ul li img {
+  width: 3em;
 }
 
-.fa-square-check{
-    font-size: 1.3em;
+.fa-square-check {
+  font-size: 1.3em;
 }
 
-@media screen and (max-width:800px){
-    .experience-container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,1fr);
-        align-items: center;
-        justify-items:center;
-    }
+@media screen and (max-width: 800px) {
+  .experience-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
 
-    .skills-title{
-        grid-row:1;
-    }
+  .skills-title {
+    grid-row: 1;
+  }
 
-    .backend{
-        margin-left: 0;
-        grid-column: 1;
-        grid-row:2;
-        margin-bottom: 2vh;
-    }
+  .backend {
+    margin-left: 0;
+    grid-column: 1;
+    grid-row: 2;
+    margin-bottom: 2vh;
+  }
 
-    .frontend{
-        margin-right: 0;
-        grid-column:1;
-        grid-row:3;
-    }
+  .frontend {
+    margin-right: 0;
+    grid-column: 1;
+    grid-row: 3;
+  }
 
-    .backend ul,
-    .frontend ul {
-        font-size: 3vh;
-    }
+  .backend ul,
+  .frontend ul {
+    font-size: 3vh;
+  }
 
-    .experience{
-        grid-row: 4;
-    }
+  .experience {
+    grid-row: 4;
+  }
 }

@@ -3,6 +3,7 @@ import "../Home/home.css";
 import MyPicture from "../../assets/profilepicture.jpg";
 import CV from "../../assets/Olving-CV.pdf";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
             <div className="redirection">
               <ul>
                 <li>
-                  <a href="about">Read more</a>
+                  <Link to="/about">Read more</Link>
                 </li>
                 <li>
                   <a href={CV} download="Amanda-Olving_CV">
@@ -28,7 +29,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a href="contact">Contact</a>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
