@@ -51,11 +51,11 @@ export default function Experience() {
               </h3>
               <ul>
                 {MyResume.education.map((edu, index) => {
+                  console.log(edu);
                   return (
                     <li key={index}>
-                      <span>{edu.institution}</span> - {edu.major}{" "}
-                      <img src={edu.imageUrl} alt={`Bild för ${edu.company}`} />
-                      <br /> ({edu.date})
+                      <span>{edu.institution}</span> - {edu.major} <br /> (
+                      {edu.date})
                     </li>
                   );
                 })}
@@ -68,11 +68,11 @@ export default function Experience() {
               </h3>
               <ul>
                 {MyResume.experience.map((exp, index) => {
+                  console.log(exp);
                   return (
                     <li key={index}>
-                      <span>{exp.company}</span> - {exp.role}{" "}
-                      <img src={exp.imageUrl} alt={`Bild för ${exp.company}`} />
-                      <br /> ({exp.date})
+                      <span>{exp.company}</span> - {exp.role} <br /> ({exp.date}
+                      )
                     </li>
                   );
                 })}

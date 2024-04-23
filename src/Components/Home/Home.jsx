@@ -3,7 +3,7 @@ import "../Home/home.css";
 import MyPicture from "../../assets/profilepicture.jpg";
 import CV from "../../assets/Olving-CV.pdf";
 import Footer from "../Footer/Footer";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -14,14 +14,14 @@ export default function Home() {
             <div className="introduction">
               <h2>Amanda Olving</h2>
               <h3>
-                Fullstack <span class="dotnet">.NET</span> Developer, Stockholm
+                Fullstack <span className="dotnet">.NET</span> Developer, Stockholm
                 SE
               </h3>
             </div>
             <div className="redirection">
               <ul>
                 <li>
-                  <Link to="/about">Read more</Link>
+                  <NavLink to="/about">Read more</NavLink>
                 </li>
                 <li>
                   <a href={CV} download="Amanda-Olving_CV">
@@ -29,7 +29,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <NavLink to="/contact">Contact</NavLink>
                 </li>
               </ul>
             </div>
