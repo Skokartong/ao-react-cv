@@ -1,14 +1,10 @@
-.modal-container {
-  height: 90vh;
-}
-
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-* {
-  box-sizing: border-box;
+.modal-container {
+  height: 90vh;
 }
 
 .spinner-container {
@@ -21,21 +17,12 @@
 
 .card {
   position: relative;
+  font-family: "Josefin Sans", sans-serif;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  padding: 1rem;
   width: 100%;
   background-size: cover;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
-    0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
-    0 16px 16px rgba(0, 0, 0, 0.1);
-}
-
-@media (min-width: 600px) {
-  .card {
-    height: 350px;
-  }
 }
 
 .card:before {
@@ -43,8 +30,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   background-size: cover;
   background-position: 0 0;
   transition: transform calc(var(--d) * 1.5) var(--e);
@@ -60,25 +45,6 @@
   width: 100%;
   height: 200%;
   pointer-events: none;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.009) 11.7%,
-    rgba(0, 0, 0, 0.034) 22.1%,
-    rgba(0, 0, 0, 0.072) 31.2%,
-    rgba(0, 0, 0, 0.123) 39.4%,
-    rgba(0, 0, 0, 0.182) 46.6%,
-    rgba(0, 0, 0, 0.249) 53.1%,
-    rgba(0, 0, 0, 0.32) 58.9%,
-    rgba(0, 0, 0, 0.394) 64.3%,
-    rgba(0, 0, 0, 0.468) 69.3%,
-    rgba(0, 0, 0, 0.54) 74.1%,
-    rgba(0, 0, 0, 0.607) 78.8%,
-    rgba(0, 0, 0, 0.668) 83.6%,
-    rgba(0, 0, 0, 0.721) 88.7%,
-    rgba(0, 0, 0, 0.762) 94.1%,
-    rgba(0, 0, 0, 0.79) 100%
-  );
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
 }
@@ -89,39 +55,38 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 1rem;
-  transition: transform var(--d) var(--e);
-  z-index: 0;
 }
 
 .content h2 {
   color: rgb(0, 0, 0);
-  padding: 10px;
-  border-radius: 20px;
+  padding: 0.2em;
+  margin-top: 1em;
+  border-radius: 15px;
   background-color: white;
-  font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
 }
 
 .content p {
   color: white;
-  font-family: "Poppins", sans-serif;
+  background-color: #9945ed;
+  padding: 1em;
+  border-radius: 15px;
+  width: 80vw;
+  margin-top: 1em;
+  font-size: 1.3rem;
 }
 
-.content > * + * {
-  margin-top: 1rem;
+.btn {
+  margin-bottom: 1em;
 }
 
 .title {
   font-size: 1.3rem;
   font-weight: bold;
-  line-height: 1.2;
 }
 
-.copy {
-  font-family: var(--font-serif);
+.copy p {
   font-size: 1.125rem;
-  font-style: italic;
   line-height: 1.35;
 }
 
